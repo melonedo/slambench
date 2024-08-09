@@ -68,7 +68,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GENERAL_COMPILATION_FLAGS}")
 find_package(Eigen3 REQUIRED)
 
 SET(SLAMBENCH_INCLUDE_DIR  ${EIGEN3_INCLUDE_DIR} ${CMAKE_SOURCE_DIR}/framework/shared/include CACHE STRING "The include paths needed to use SLAMBENCH")
-SET(SLAMBENCH_LIBRARIES    slambench-utils         -Wl,--whole-archive slambench-io                slambench-metrics  -Wl,--no-whole-archive)
+SET(SLAMBENCH_LIBRARIES slambench-libraries)
 SET(SLAMBENCH_C_WRAPPER                            -Wl,--whole-archive slambench-c-wrapper                            -Wl,--no-whole-archive)
 
 # SLAMBENCH FUNCTIONS 
