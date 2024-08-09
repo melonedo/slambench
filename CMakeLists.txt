@@ -17,7 +17,11 @@ SET(CMAKE_BUILD_DIRECTORY          ${PROJECT_BINARY_DIR}/builddir)
 # Most common compiler flags
 #######################################################
 
-set(GENERAL_COMPILATION_FLAGS "-g -O3 -Wall  -Wextra")
+set(GENERAL_COMPILATION_FLAGS "-g -O3")
+
+# Otherwise we are flooded by warnings
+set(CMAKE_C_FLAGS   "${CMAKE_C_FLAGS} -Wno-maybe-uninitialized")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-deprecated-copy -Wno-reorder -Wno-catch-value -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-format -Wno-deprecated-declarations -Wno-unused-result -Wno-return-type -Wno-deprecated -Wno-conversion-null")
 
 if(CMAKE_COMPILER_IS_GNUCC)
     add_definitions(-D_FILE_OFFSET_BITS=64) ## Workaround for 32 bit boards with fwrite 2G limit
