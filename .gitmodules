@@ -1,0 +1,4 @@
+[submodule "benchmarks/orbslam3/src/original"]
+	path = benchmarks/orbslam3/src/original
+	url = https://github.com/melonedo/ORB-SLAM3.git
+	branch = slambench
