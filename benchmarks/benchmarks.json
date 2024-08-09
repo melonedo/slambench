@@ -3,7 +3,7 @@
     "name": "MonoSLAM",
     "reference" : "Davison et al, TPAMI'07",
     "original_repo" : "https://github.com/hanmekim/SceneLib2",
-    "new_repo" : "https://github.com/bbodin/SceneLib",
+    "new_repo" : "https://github.com/hanmekim/SceneLib2",
     "branch" : "master",
     "path" : "benchmarks/monoslam/src/original"
   },
@@ -19,7 +19,7 @@
     "name" : "KFusion",
     "reference" : "Newcombe et al. ISMAR'11",
     "original_repo" : "https://github.com/GerhardR/kfusion",
-    "new_repo" : "ttps://github.com/pamela-project/kfusion",
+    "new_repo" : "https://github.com/pamela-project/kfusion",
     "branch" : "update-master",
     "path" : "benchmarks/kfusion/src/original"
   },
@@ -150,13 +150,5 @@
     "new_repo" : "https://github.com/mihaibujanca/open_vins",
     "branch" : "rpng-master",
     "path" : "benchmarks/open_vins/src/original"
-  },
-  "fullfusion" : {
-    "name" : "FullFusion",
-    "reference" : "Bujanca et al. ICCVW'19",
-    "original_repo" : "https://github.com/mihaibujanca/fullfusion-jetson",
-    "new_repo" : "https://github.com/mihaibujanca/fullfusion-jetson",
-    "branch" : "master",
-    "path" : "benchmarks/fullfusion/src/original"
   }
 }
